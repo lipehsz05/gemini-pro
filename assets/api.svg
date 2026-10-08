@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">Construa sua própria operação</title>
+  <desc id="desc">Exemplo conceitual de chamada de API: assinex.createOrder com product gemini-pro e customer cliente@example.com. Exemplo ilustrativo; consulte a documentação oficial da API para implementação.</desc>
+  <defs>
+    <clipPath id="frame"><rect width="1280" height="440" rx="22"/></clipPath>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#f0f6fc" stroke-opacity="0.045"/>
+    </pattern>
+    <radialGradient id="g-violet">
+      <stop offset="0" stop-color="#9177C7" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#9177C7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-brand">
+      <stop offset="0" stop-color="#0A7FC2" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#0A7FC2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4796E3" stop-opacity="0.7"/>
+      <stop offset="0.4" stop-color="#9177C7" stop-opacity="0.25"/>
+      <stop offset="0.7" stop-color="#f0f6fc" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#3AA8E8" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="tab" x1="0" x2="1">
+      <stop offset="0" stop-color="#4796E3"/>
+      <stop offset="1" stop-color="#3AA8E8"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: "Segoe UI", Inter, -apple-system, Helvetica, Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, Menlo, monospace; }
+      .ico { fill: none; stroke: #3AA8E8; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+      .code { font-size: 18px; fill: #e6edf3; }
+      .com { fill: #6e7886; font-style: italic; }
+      .kw { fill: #ff7b72; }
+      .fn { fill: #d2a8ff; }
+      .prop { fill: #7ee2b8; }
+      .str { fill: #a5d6ff; }
+      .pun { fill: #8b949e; }
+      .ln { font-size: 15px; fill: #6e7886; fill-opacity: 0.6; }
+      .cursor { animation: blink 1.1s steps(2, start) infinite; }
+      @keyframes blink { to { visibility: hidden; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="440" fill="#07090d"/>
+    <rect width="1280" height="440" fill="url(#grid)"/>
+    <circle cx="1180" cy="20" r="320" fill="url(#g-violet)"/>
+    <circle cx="80" cy="460" r="320" fill="url(#g-brand)"/>
+
+    <!-- coluna de texto -->
+    <g class="sans">
+      <text x="56" y="76" class="mono" font-size="13" letter-spacing="1.5" fill="#6e7886"><tspan fill="#3AA8E8">{ }</tspan>  EXEMPLO DE API</text>
+      <text x="56" y="124" font-size="32" font-weight="600" letter-spacing="-0.6" fill="#e6edf3">Construa sua</text>
+      <text x="56" y="164" font-size="32" font-weight="600" letter-spacing="-0.6" fill="#e6edf3">própria operação</text>
+
+      <rect x="56" y="206" width="40" height="40" rx="10" fill="#0A7FC2" fill-opacity="0.14" stroke="#3AA8E8" stroke-opacity="0.4"/>
+      <g transform="translate(64 214)" class="ico"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M2 7h20"/></g>
+      <text x="112" y="224" font-size="17" font-weight="600" fill="#e6edf3">Seu canal, sua experiência</text>
+      <text x="112" y="246" font-size="15" fill="#9aa5b4">A venda continua no seu site, bot ou painel.</text>
+
+      <rect x="56" y="270" width="40" height="40" rx="10" fill="#0A7FC2" fill-opacity="0.14" stroke="#3AA8E8" stroke-opacity="0.4"/>
+      <g transform="translate(64 278)" class="ico"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></g>
+      <text x="112" y="288" font-size="17" font-weight="600" fill="#e6edf3">Menos etapas manuais</text>
+      <text x="112" y="310" font-size="15" fill="#9aa5b4">O pedido nasce no momento da venda.</text>
+
+      <rect x="56" y="334" width="40" height="40" rx="10" fill="#0A7FC2" fill-opacity="0.14" stroke="#3AA8E8" stroke-opacity="0.4"/>
+      <g transform="translate(64 342)" class="ico"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></g>
+      <text x="112" y="352" font-size="17" font-weight="600" fill="#e6edf3">Um ponto central</text>
+      <text x="112" y="374" font-size="15" fill="#9aa5b4">Pedidos em uma única infraestrutura.</text>
+    </g>
+
+    <!-- janela de código -->
+    <rect x="560" y="48" width="672" height="344" rx="18" fill="#0a0e14"/>
+    <rect x="560.75" y="48.75" width="670.5" height="342.5" rx="17.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    <path d="M561 66a17 17 0 0 1 17-17h636a17 17 0 0 1 17 17v34H561Z" fill="#0d1117"/>
+    <line x1="561" y1="100" x2="1231" y2="100" stroke="#f0f6fc" stroke-opacity="0.08"/>
+    <circle cx="584" cy="75" r="5.5" fill="#ff5f57" fill-opacity="0.75"/>
+    <circle cx="602" cy="75" r="5.5" fill="#febc2e" fill-opacity="0.75"/>
+    <circle cx="620" cy="75" r="5.5" fill="#28c840" fill-opacity="0.75"/>
+    <g class="mono" font-size="14">
+      <text x="650" y="80" fill="#e6edf3">exemplo.js</text>
+      <rect x="646" y="98" width="88" height="2" fill="url(#tab)"/>
+      <text x="756" y="80" fill="#6e7886">JavaScript</text>
+      <rect x="1104" y="63" width="112" height="24" rx="6" fill="#d29922" fill-opacity="0.12" stroke="#d29922" stroke-opacity="0.45"/>
+      <text x="1160" y="80" text-anchor="middle" font-size="11" letter-spacing="1" fill="#d29922">CONCEITUAL</text>
+    </g>
+
+    <g class="mono">
+      <text x="600" y="146" class="ln" text-anchor="end">1</text>
+      <text x="600" y="180" class="ln" text-anchor="end">2</text>
+      <text x="600" y="214" class="ln" text-anchor="end">3</text>
+      <text x="600" y="248" class="ln" text-anchor="end">4</text>
+      <text x="600" y="282" class="ln" text-anchor="end">5</text>
+
+      <text x="620" y="146" class="code com">// Exemplo conceitual</text>
+      <text x="620" y="180" class="code"><tspan class="kw">const</tspan> order <tspan class="pun">=</tspan> <tspan class="kw">await</tspan> assinex<tspan class="pun">.</tspan><tspan class="fn">createOrder</tspan><tspan class="pun">({</tspan></text>
+      <text x="620" y="214" class="code" xml:space="preserve">    <tspan class="prop">product</tspan><tspan class="pun">:</tspan> <tspan class="str">"gemini-pro"</tspan><tspan class="pun">,</tspan></text>
+      <text x="620" y="248" class="code" xml:space="preserve">    <tspan class="prop">customer</tspan><tspan class="pun">:</tspan> <tspan class="str">"cliente@example.com"</tspan></text>
+      <text x="620" y="282" class="code"><tspan class="pun">});</tspan></text>
+      <rect x="656" y="267" width="10" height="20" fill="#e6edf3" fill-opacity="0.7" class="cursor"/>
+    </g>
+
+    <line x1="561" y1="332" x2="1231" y2="332" stroke="#f0f6fc" stroke-opacity="0.08"/>
+    <g class="sans">
+      <circle cx="590" cy="362" r="8" fill="none" stroke="#d29922" stroke-width="1.5"/>
+      <line x1="590" y1="358" x2="590" y2="362.5" stroke="#d29922" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="590" cy="366" r="1" fill="#d29922"/>
+      <text x="608" y="367" font-size="15" fill="#d29922">Exemplo ilustrativo — consulte a documentação oficial da API para implementação.</text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="439" rx="21.5" fill="none" stroke="#f0f6fc" stroke-opacity="0.1"/>
+</svg>

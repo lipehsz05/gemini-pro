@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="270" viewBox="0 0 1280 270" role="img" aria-labelledby="title desc">
+  <title id="title">Por que Assinex?</title>
+  <desc id="desc">API: integre a operação ao seu próprio sistema. Automação: reduza processos manuais. Revenda: estruture sua própria operação comercial. Centralização: gerencie seus pedidos através de uma única infraestrutura.</desc>
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3AA8E8" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#f0f6fc" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#f0f6fc" stop-opacity="0.08"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1">
+      <stop offset="0" stop-color="#0A7FC2" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0A7FC2" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .sans { font-family: "Segoe UI", Inter, -apple-system, Helvetica, Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, Menlo, monospace; }
+      .ico { fill: none; stroke: #3AA8E8; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+      .t { font-size: 22px; font-weight: 600; fill: #e6edf3; }
+      .d { font-size: 16px; fill: #9aa5b4; }
+      .n { font-size: 12px; fill: #6e7886; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <g class="sans">
+    <!-- API -->
+    <rect x="30" y="30" width="290" height="210" rx="18" fill="#0d1117"/>
+    <rect x="30" y="30" width="290" height="210" rx="18" fill="url(#glow)"/>
+    <rect x="30.75" y="30.75" width="288.5" height="208.5" rx="17.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    <rect x="54" y="54" width="48" height="48" rx="11" fill="#0A7FC2" fill-opacity="0.14" stroke="#3AA8E8" stroke-opacity="0.4"/>
+    <g transform="translate(66 66)" class="ico"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"/><path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"/></g>
+    <text x="296" y="74" text-anchor="end" class="mono n">01</text>
+    <text x="54" y="148" class="t">API</text>
+    <text x="54" y="180" class="d">Integre a operação ao</text>
+    <text x="54" y="202" class="d">seu próprio sistema.</text>
+
+    <!-- Automação -->
+    <rect x="340" y="30" width="290" height="210" rx="18" fill="#0d1117"/>
+    <rect x="340" y="30" width="290" height="210" rx="18" fill="url(#glow)"/>
+    <rect x="340.75" y="30.75" width="288.5" height="208.5" rx="17.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    <rect x="364" y="54" width="48" height="48" rx="11" fill="#0A7FC2" fill-opacity="0.14" stroke="#3AA8E8" stroke-opacity="0.4"/>
+    <g transform="translate(376 66)" class="ico"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></g>
+    <text x="606" y="74" text-anchor="end" class="mono n">02</text>
+    <text x="364" y="148" class="t">Automação</text>
+    <text x="364" y="180" class="d">Reduza processos</text>
+    <text x="364" y="202" class="d">manuais.</text>
+
+    <!-- Revenda -->
+    <rect x="650" y="30" width="290" height="210" rx="18" fill="#0d1117"/>
+    <rect x="650" y="30" width="290" height="210" rx="18" fill="url(#glow)"/>
+    <rect x="650.75" y="30.75" width="288.5" height="208.5" rx="17.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    <rect x="674" y="54" width="48" height="48" rx="11" fill="#0A7FC2" fill-opacity="0.14" stroke="#3AA8E8" stroke-opacity="0.4"/>
+    <g transform="translate(686 66)" class="ico"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></g>
+    <text x="916" y="74" text-anchor="end" class="mono n">03</text>
+    <text x="674" y="148" class="t">Revenda</text>
+    <text x="674" y="180" class="d">Estruture sua própria</text>
+    <text x="674" y="202" class="d">operação comercial.</text>
+
+    <!-- Centralização -->
+    <rect x="960" y="30" width="290" height="210" rx="18" fill="#0d1117"/>
+    <rect x="960" y="30" width="290" height="210" rx="18" fill="url(#glow)"/>
+    <rect x="960.75" y="30.75" width="288.5" height="208.5" rx="17.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    <rect x="984" y="54" width="48" height="48" rx="11" fill="#0A7FC2" fill-opacity="0.14" stroke="#3AA8E8" stroke-opacity="0.4"/>
+    <g transform="translate(996 66)" class="ico"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></g>
+    <text x="1226" y="74" text-anchor="end" class="mono n">04</text>
+    <text x="984" y="148" class="t">Centralização</text>
+    <text x="984" y="180" class="d">Gerencie seus pedidos através</text>
+    <text x="984" y="202" class="d">de uma única infraestrutura.</text>
+  </g>
+</svg>

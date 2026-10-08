@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="600" viewBox="0 0 1280 600" role="img" aria-labelledby="title desc">
+  <title id="title">Gemini Pro — Guia de aquisição e revenda</title>
+  <desc id="desc">Entenda como funcionam assinaturas digitais, fornecedores e integrações por API. Guia independente, sem vínculo com o Google.</desc>
+  <defs>
+    <clipPath id="frame"><rect width="1280" height="600" rx="24"/></clipPath>
+    <linearGradient id="gem" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#4796E3"/>
+      <stop offset="0.55" stop-color="#9177C7"/>
+      <stop offset="1" stop-color="#CA6673"/>
+    </linearGradient>
+    <linearGradient id="title-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4796E3"/>
+      <stop offset="0.6" stop-color="#9177C7"/>
+      <stop offset="1" stop-color="#CA6673"/>
+    </linearGradient>
+    <linearGradient id="tile-stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4796E3" stop-opacity="0.8"/>
+      <stop offset="0.5" stop-color="#f0f6fc" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#3AA8E8" stop-opacity="0.6"/>
+    </linearGradient>
+    <radialGradient id="glow-violet">
+      <stop offset="0" stop-color="#9177C7" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#9177C7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-blue">
+      <stop offset="0" stop-color="#4796E3" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#4796E3" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-brand">
+      <stop offset="0" stop-color="#0A7FC2" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0A7FC2" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#f0f6fc" stroke-opacity="0.05"/>
+    </pattern>
+    <radialGradient id="grid-fade" cx="0.5" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="grid-mask"><rect width="1280" height="600" fill="url(#grid-fade)"/></mask>
+    <path id="star" d="M12 1.5c.35 5.6 4.9 10.15 10.5 10.5-5.6.35-10.15 4.9-10.5 10.5C11.65 16.9 7.1 12.35 1.5 12 7.1 11.65 11.65 7.1 12 1.5Z"/>
+    <style>
+      .sans { font-family: "Segoe UI", Inter, -apple-system, Helvetica, Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, Menlo, monospace; }
+      .orbit-a { transform-origin: 990px 270px; animation: spin 40s linear infinite; }
+      .orbit-b { transform-origin: 990px 270px; animation: spin 70s linear infinite reverse; }
+      .flow { stroke-dasharray: 6 7; animation: dash 1.4s linear infinite; }
+      .float-1 { animation: float 6s ease-in-out infinite; }
+      .float-2 { animation: float 6s ease-in-out -2s infinite; }
+      .float-3 { animation: float 6s ease-in-out -4s infinite; }
+      .pulse { animation: pulse 3s ease-in-out infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes dash { to { stroke-dashoffset: -13; } }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+      @keyframes pulse { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="600" fill="#07090d"/>
+    <rect width="1280" height="600" fill="url(#grid)" mask="url(#grid-mask)"/>
+    <circle cx="990" cy="270" r="330" fill="url(#glow-violet)"/>
+    <circle cx="180" cy="40" r="380" fill="url(#glow-blue)"/>
+    <circle cx="300" cy="640" r="300" fill="url(#glow-brand)"/>
+
+    <!-- ===== Texto ===== -->
+    <g class="mono" font-size="13" letter-spacing="1.2">
+      <rect x="80" y="74" width="132" height="30" rx="8" fill="#0A7FC2" fill-opacity="0.16" stroke="#0A7FC2" stroke-opacity="0.55"/>
+      <text x="146" y="94" text-anchor="middle" fill="#3AA8E8">GUIA TÉCNICO</text>
+      <rect x="222" y="74" width="72" height="30" rx="8" fill="#121821" stroke="#f0f6fc" stroke-opacity="0.14"/>
+      <text x="258" y="94" text-anchor="middle" fill="#9aa5b4">PT-BR</text>
+      <rect x="304" y="74" width="148" height="30" rx="8" fill="#9177C7" fill-opacity="0.14" stroke="#9177C7" stroke-opacity="0.5"/>
+      <text x="378" y="94" text-anchor="middle" fill="#b9a6e6">REVENDA · API</text>
+    </g>
+
+    <!-- lockup de marcas -->
+    <g class="sans">
+      <rect x="80" y="134" width="196" height="48" rx="12" fill="#121821" fill-opacity="0.85" stroke="#f0f6fc" stroke-opacity="0.1"/>
+      <use href="#star" transform="translate(96 146) scale(1)" fill="url(#gem)"/>
+      <text x="130" y="164" font-size="18" font-weight="600" fill="#e6edf3">Google Gemini</text>
+      <line x1="288" y1="158" x2="338" y2="158" stroke="#f0f6fc" stroke-opacity="0.18"/>
+      <circle cx="313" cy="158" r="4" fill="#3AA8E8" class="pulse"/>
+      <rect x="350" y="134" width="130" height="48" rx="12" fill="#121821" fill-opacity="0.85" stroke="#f0f6fc" stroke-opacity="0.1"/>
+      <text x="415" y="166" text-anchor="middle" font-size="21" font-weight="800" font-style="italic" letter-spacing="-0.8"><tspan fill="#e6edf3">ASSIN</tspan><tspan fill="#3AA8E8">EX</tspan></text>
+    </g>
+
+    <g class="sans">
+      <text x="76" y="300" font-size="100" font-weight="700" letter-spacing="-3" fill="url(#title-grad)">Gemini Pro</text>
+      <text x="80" y="362" font-size="42" font-weight="600" letter-spacing="-0.8" fill="#e6edf3">Guia de aquisição e revenda</text>
+      <text x="80" y="418" font-size="21" fill="#9aa5b4">Entenda como funcionam assinaturas digitais,</text>
+      <text x="80" y="448" font-size="21" fill="#9aa5b4">fornecedores e integrações por API.</text>
+    </g>
+    <g class="mono" font-size="14" fill="#6e7886">
+      <circle cx="86" cy="531" r="4" fill="#3fb950"/>
+      <text x="100" y="536">Conteúdo independente · sem vínculo com o Google</text>
+    </g>
+
+    <!-- ===== Arte: IA no centro, nós de cloud / API / bot / loja ===== -->
+    <circle cx="990" cy="270" r="92" fill="none" stroke="#f0f6fc" stroke-opacity="0.1"/>
+    <circle cx="990" cy="270" r="152" fill="none" stroke="#f0f6fc" stroke-opacity="0.07"/>
+    <circle cx="990" cy="270" r="214" fill="none" stroke="#f0f6fc" stroke-opacity="0.07" stroke-dasharray="2 7"/>
+
+    <g class="orbit-a">
+      <circle cx="990" cy="178" r="5" fill="#4796E3"/>
+      <circle cx="1142" cy="270" r="4" fill="#CA6673"/>
+    </g>
+    <g class="orbit-b">
+      <circle cx="990" cy="484" r="4.5" fill="#3AA8E8"/>
+      <circle cx="838" cy="270" r="3.5" fill="#9177C7"/>
+    </g>
+
+    <g fill="none" stroke-width="1.5">
+      <line x1="990" y1="270" x2="830" y2="118" stroke="#f0f6fc" stroke-opacity="0.22" class="flow"/>
+      <line x1="990" y1="270" x2="1150" y2="108" stroke="#3AA8E8" stroke-opacity="0.85" stroke-width="2" class="flow"/>
+      <line x1="990" y1="270" x2="810" y2="410" stroke="#f0f6fc" stroke-opacity="0.22" class="flow"/>
+      <line x1="990" y1="270" x2="1170" y2="404" stroke="#f0f6fc" stroke-opacity="0.22" class="flow"/>
+    </g>
+
+    <!-- núcleo -->
+    <rect x="922" y="202" width="136" height="136" rx="32" fill="#121821" stroke="url(#tile-stroke)" stroke-width="1.5"/>
+    <use href="#star" transform="translate(950 230) scale(3.33)" fill="url(#gem)"/>
+
+    <!-- nós -->
+    <g class="sans">
+      <g class="float-1">
+        <rect x="772" y="98" width="116" height="40" rx="11" fill="#121821" stroke="#f0f6fc" stroke-opacity="0.12"/>
+        <g transform="translate(788 108)" fill="none" stroke="#9aa5b4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+        </g>
+        <text x="820" y="124" class="mono" font-size="14" fill="#9aa5b4">Cloud</text>
+      </g>
+      <g class="float-2">
+        <rect x="1064" y="84" width="176" height="48" rx="12" fill="#0d1a26" stroke="#3AA8E8" stroke-opacity="0.55"/>
+        <text x="1080" y="115" font-size="18" font-weight="800" font-style="italic" letter-spacing="-0.6"><tspan fill="#e6edf3">ASSIN</tspan><tspan fill="#3AA8E8">EX</tspan></text>
+        <rect x="1180" y="97" width="44" height="22" rx="6" fill="#0A7FC2" fill-opacity="0.2" stroke="#3AA8E8" stroke-opacity="0.5"/>
+        <text x="1202" y="113" text-anchor="middle" class="mono" font-size="12" fill="#3AA8E8">API</text>
+      </g>
+      <g class="float-3">
+        <rect x="758" y="390" width="104" height="40" rx="11" fill="#121821" stroke="#f0f6fc" stroke-opacity="0.12"/>
+        <g transform="translate(774 400)" fill="none" stroke="#9aa5b4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/>
+        </g>
+        <text x="806" y="416" class="mono" font-size="14" fill="#9aa5b4">Bot</text>
+      </g>
+      <g class="float-1">
+        <rect x="1116" y="384" width="112" height="40" rx="11" fill="#121821" stroke="#f0f6fc" stroke-opacity="0.12"/>
+        <g transform="translate(1132 394)" fill="none" stroke="#9aa5b4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+        </g>
+        <text x="1164" y="410" class="mono" font-size="14" fill="#9aa5b4">Loja</text>
+      </g>
+    </g>
+
+    <!-- mini terminal -->
+    <g class="mono">
+      <rect x="850" y="468" width="300" height="96" rx="12" fill="#0d1117" fill-opacity="0.92" stroke="#f0f6fc" stroke-opacity="0.12"/>
+      <circle cx="868" cy="485" r="4" fill="#ff5f57" fill-opacity="0.8"/>
+      <circle cx="882" cy="485" r="4" fill="#febc2e" fill-opacity="0.8"/>
+      <circle cx="896" cy="485" r="4" fill="#28c840" fill-opacity="0.8"/>
+      <text x="912" y="489" font-size="11" fill="#6e7886">~/gemini-pro</text>
+      <line x1="850" y1="498" x2="1150" y2="498" stroke="#f0f6fc" stroke-opacity="0.08"/>
+      <text x="866" y="520" font-size="13"><tspan fill="#3AA8E8">$</tspan><tspan fill="#e6edf3"> guia</tspan><tspan fill="#9aa5b4"> --topicos</tspan></text>
+      <text x="866" y="541" font-size="13" fill="#9aa5b4"><tspan fill="#3fb950">✓</tspan> assinaturas · revenda</text>
+      <text x="866" y="558" font-size="13" fill="#9aa5b4"><tspan fill="#3fb950">✓</tspan> integracao-por-api</text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="599" rx="23.5" fill="none" stroke="#f0f6fc" stroke-opacity="0.1"/>
+</svg>
